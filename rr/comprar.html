@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="csscomprar.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="pagFinalizarCompra">
+    <div class="calcularFrete">
+      <p class="calcularF">Calcule Frete</p>
+      <div class="paidivCEP">
+        <p class="informeCEP">Informe o CEP</p>
+        <input class="CEP" type="number" id="calcularCep">
+        <!-- <button class="butOk">OK</button> -->
+      </div>
+      <div id="erro"></div>
+    </div>
+    <div class="cartaoFormaDePagamento">
+      <div class="cartaoDeBorda">
+        <input class="ponto" type="radio" name="seletor" value="cartao">
+        <p class="cartaoP">Cartão de crédito</p>
+        <img class="bandeiraImg" src="./img/bandeiras.png" alt="imagem cartão de crédito">
+      </div>
+      <div class="cartaoDeBorda">
+        <input class="ponto" type="radio" name="seletor" value="pix">
+        <p class="cartaoP">Pix</p>
+        <img class="pixImg" src="./img/019a2d16277d159cd2ef1298a4c60ab8.png" alt="">
+      </div>
+    </div>
+    <div class="resumoP">
+      <div class="resumoPedido">
+        <p> Resumo do Pedido</p>
+      </div>
+      <div class="resumo-DoPedido">
+        <p>Produtos: .......................R$</p>
+        <p>300,00</p>
+      </div>
+      <div class="resumo-DoPedido">
+        <p>Frete: .............................R$</p>
+        <p>900,00</p>
+      </div>
+      <div class="linha0">
+        <p class="linha1"></p>
+      </div>
+    </div>
+    <div class="totalPedido">
+      <p class="totalP">Total: R$</p>
+      <p>200,00</p>
+    </div>
+    <div class="bordaFinalizar"></div>
+    <button class="finalizar">Finalizar</button>
+  </div>
+  <script src="./cep.js"></script>
+</body>
+</html>
